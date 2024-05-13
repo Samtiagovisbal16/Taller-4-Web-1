@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes por Colombia</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body >
+
+    <script>
+        var imagen = document.createElement("img")
+
+        imagen.src = "recursos/img/viaTren.jpg"
+        imagen.style.width = "100%"
+        imagen.style.height = "600px"
+        imagen.style.position = "relative"
+
+        document.body.appendChild(imagen)
+
+        var header = document.createElement("header")
+        header.innerHTML = `
+
+        <div class="contenedorDeLaIzquierda">
+            <img src="recursos/img/avion.png" alt="" height="75px" width="100px">
+        </div>
+
+        <div class="contenedorDeLaDerecha">
+        <div >
+        <a href="#">HOME </a>
+        </div>
+        <a href="#">SERVICES </a>
+        <a href="#">EVENTS </a>
+        <a href="#">ABOUT US</a>
+        <a href="#" style = "margin-right: 15px;">CONTACT</a>
+
+        </div>
+    `
+        header.style.display = "flex"
+        header.style.top = "-550px"
+        header.style.position = "relative"
+        header.style.marginRight = "auto"
+        header.style.marginLeft = "auto"
+        header.style.height = "80px"
+        header.style.width = "80%"
+        header.style.alignItems = "center"
+        header.style.backgroundColor = "white"
+
+        document.body.appendChild(header)
+
+        var contenedorInfo = document.createElement("div")
+        contenedorInfo.innerHTML = `
+        <div>
+            <br>    
+        <span class="TituloPrecio" style="font-size: 25px; background-color: red; padding: 10px 25px; color: white; ">$8,450</span>
+        <h3 style="color: black;">Venice Italy</h3>
+        <p>Travel is free responsive template by templatemo <br>
+           all images use in this template are from Unisplash</p>
+        <br>
+        <a href="#" style="background-color: #9fd133; color: white; padding: 15px 25px; " >PRE-BOOKING</a>
+        </div>
+        `
+        contenedorInfo.style.display = "flex"
+        contenedorInfo.style.position = "relative"
+        contenedorInfo.style.height = "250px"
+        contenedorInfo.style.width = "350px"
+        contenedorInfo.style.top = "-450px"
+        contenedorInfo.style.left = "120px"
+        contenedorInfo.style.backgroundColor = "white"
+        contenedorInfo.style.textAlign = "center"
+
+        document.body.appendChild(contenedorInfo)
+
+        var contenedorViajes = document.createElement("div")
+        contenedorViajes.innerHTML = `
+        <div>
+            <span class="TituloDeLosPaises">ITALY</span>
+            <img src="recursos/img/italia.png" alt="italia" class="imagenesDeLosPaises">
+            <p style="color: #9fd133;">Rome, Milan, Naples</p>
+            <p style="color: #eb4245;">SILVER HOTEL, 4 NIGHTS, 5 STARS</p>
+            <br>
+            <a href="#" class="botonComprar">$1,800 BOOK NOW</a>
+        </div>
+
+        <div>
+            <span class="TituloDeLosPaises">FRANCE</span>
+            <img src="recursos/img/francia.png" alt="francia" class="imagenesDeLosPaises">
+            <p style="color: #9fd133;">Paris, Marseille, Lyon</p>
+            <p style="color: #eb4245;">NEW PLACE , 5 NIGHTS , 5 STARS </p>
+            <br>
+            <a href="#" class="botonComprar">$2,300 BOOK NOW</a>
+        </div>
+
+        <div>
+            <span class="TituloDeLosPaises">GERMANY</span>
+            <img src="recursos/img/alemania.png" alt="alemania" class="imagenesDeLosPaises">
+            <p style="color: #9fd133;">Berlin, Hamburg, Munich</p>
+            <p style="color: #eb4245;">LUXE HOTEL, 5 NIGHTS, 6 STARS</p>
+            <br>
+            <a href="#" class="botonComprar">$3,100 BOOK NOW</a>
+        </div>
+
+        <div>
+            <span class="TituloDeLosPaises">SPAIN</span>
+            <img src="recursos/img/españa.png" alt="españa" class="imagenesDeLosPaises">
+            <p style="color: #9fd133;">Madrid, Barcelona, Valencia</p>
+            <p style="color: #eb4245;">GOOHD HOTEL, 4 NIGHTS, 6 STARS</p>
+            <br>
+            <a href="#" class="botonComprar">$4.800 BOOK NOW</a>
+        </div>
+
+        `
+        contenedorViajes.style.display = "flex"
+        contenedorViajes.style.gap = "80px"
+        contenedorViajes.style.marginLeft = "auto"
+        contenedorViajes.style.marginRight = "auto"
+        contenedorViajes.style.position = "relative"
+        contenedorViajes.style.margin = "0%"
+        contenedorViajes.style.marginTop = "-390px"
+
+        contenedorViajes.style.justifyContent = "center"
+        document.body.appendChild(contenedorViajes)
+
+        var avion = document.createElement("img")
+
+        avion.src = "recursos/img/ImagenTrabajo.jpg"
+        avion.style.width = "100%"
+        avion.style.height = "150px"
+        avion.style.marginTop = "180px"
+        avion.style.position = "absolute"
+
+        document.body.appendChild(avion)
+
+        var pieDePagina = document.createElement("div")
+
+        pieDePagina.innerHTML = `
+        <div class="barraDeLaIzquierda" >
+            <img src="recursos/img/avion.png" alt="Logo" height="80px" width="140px">
+
+        </div>
+        <div class="barraDelCentro">
+            <p>Copyright c 2084 Company Name-Travel by templatemo</p>
+
+        </div>
+        <div class="barraDelaDerecha">
+            <img src="recursos/img/iconos.png" alt="Barra" height="100px" width="180px">
+            
+
+        </div>
+
+        `
+        pieDePagina.style.display = "flex"
+        pieDePagina.style.width = "100%"
+        pieDePagina.style.justifyContent = "center"
+        pieDePagina.style.alignItems = "center"
+        pieDePagina.style.marginTop = "380px"
+
+        document.body.appendChild(pieDePagina)
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
